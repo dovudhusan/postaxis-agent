@@ -13,7 +13,7 @@ Agents that design their own images (carousels, quote cards, slides) send them t
 
 ## Install
 
-- **Claude Code / Cowork:** add this folder (or its repository) as a plugin marketplace, then install `postaxis`.
+- **Claude Code / Cowork:** run `/plugin marketplace add dovudhusan/postaxis-agent`, then `/plugin install postaxis@postaxis`.
 - **Claude (web, desktop, mobile):** add the connector `https://postaxis.io/api/mcp` under Settings → Connectors. For the skill, upload `postaxis-skill.zip` under Settings → Capabilities → Skills.
 - **Cursor:** use `.cursor-plugin`, or add the MCP URL in Cursor's MCP settings.
 - **Gemini CLI:** `gemini-extension.json` declares the hosted server.
