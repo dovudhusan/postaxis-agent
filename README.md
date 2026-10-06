@@ -9,7 +9,7 @@ This bundle contains:
 
 ## Images without uploads
 
-Agents that design their own images (carousels, quote cards, slides) send them to the `render_images` tool as SVG. PostAxis renders the PNGs on its server, so it works even in sandboxes with no internet access, such as Claude's code execution or ChatGPT. Local photos and videos use `create_upload_link`, which uploads to `postaxis.io`.
+Agents that design their own images (carousels, quote cards, slides) send them to the `render_images` tool as SVG. PostAxis renders the PNGs on its server, so it works even in sandboxes with no internet access, such as Claude's code execution or ChatGPT. Photos and videos the user already has go through `request_media_upload`: the agent gives the user a postaxis.io link, they drop the file there, and the agent picks it up with `get_uploaded_media`. No network settings needed. Local agents can also upload directly with `create_upload_link`.
 
 ## Install
 
