@@ -6,17 +6,14 @@
   },
   "metadata": {
     "description": "PostAxis social media scheduling for AI agents",
-    "version": "1.0.1"
+    "version": "1.0.2"
   },
   "plugins": [
     {
       "name": "postaxis",
       "description": "Schedule and publish social media posts from your AI agent with PostAxis: X, Threads, LinkedIn, Telegram, Facebook Pages, Instagram, TikTok and YouTube Shorts. Includes the hosted PostAxis MCP server and a skill for carousels and slides rendered on the PostAxis server.",
       "source": "./",
-      "strict": false,
-      "skills": [
-        "./skills/postaxis"
-      ]
+      "strict": true
     }
   ]
 }
