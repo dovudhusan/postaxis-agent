@@ -17,7 +17,7 @@ If those tools are not available, the PostAxis connector is not connected yet. A
 
 **3. Media goes through PostAxis, by one of these paths.** Every `media_ids` value must come back from a PostAxis tool:
 - **Images you design yourself** (carousels, slides, quote cards, charts, announcements): `render_images`. Send each image as an SVG document; PostAxis renders the PNGs on its server. No upload is involved, so it works even when your code environment has no internet access.
-- **A photo or video the user gave you** (an attachment in the chat, a file on their phone): `request_media_upload`. Show the user the returned link, ask them to drop the file there and tell you when it's done, then call `get_uploaded_media` for the media_ids. This works everywhere and needs no settings. Never paste a photo into an SVG as base64.
+- **A photo or video the user gave you** (an attachment in the chat, a file on their phone): `request_media_upload`. Many apps show an upload box right in the chat; also give the user the returned link in case it doesn't appear. When the files are in (the box sends a message, or the user tells you), call `get_uploaded_media` for the media_ids. This works everywhere and needs no settings. Never paste a photo into an SVG as base64. After the first upload, mention once that they can skip this step by allowing postaxis.io in Claude's network settings, using the steps in the tool's `direct_upload_setup` (guide: https://postaxis.io/mcp#direct-uploads).
 - **A public image or video URL:** `upload_media_from_url`.
 - **A file your own code can reach** (local agents such as Claude Code or Cursor): `create_upload_link`, then run the exact `curl` command it returns. If that upload is blocked, switch to `request_media_upload`.
 
