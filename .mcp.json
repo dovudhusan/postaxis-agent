@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "postaxis": { "type": "http", "url": "https://postaxis.io/api/mcp" }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "postaxis",
+  "version": "1.0.0",
+  "description": "Schedule and publish social media posts from your AI agent with PostAxis: X, Threads, LinkedIn, Telegram, Facebook Pages, Instagram, TikTok and YouTube Shorts. Includes the hosted PostAxis MCP server and a skill for carousels and slides rendered on the PostAxis server.",
+  "mcpServers": {
+    "postaxis": {
+      "httpUrl": "https://postaxis.io/api/mcp",
+      "description": "Hosted PostAxis MCP server (streamable HTTP). Gemini CLI opens a browser to sign in to PostAxis on first use."
+    }
+  }
+}

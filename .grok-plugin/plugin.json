@@ -1,0 +1,14 @@
+{
+  "name": "postaxis",
+  "version": "1.0.0",
+  "description": "Schedule and publish social media posts from your AI agent with PostAxis: X, Threads, LinkedIn, Telegram, Facebook Pages, Instagram, TikTok and YouTube Shorts. Includes the hosted PostAxis MCP server and a skill for carousels and slides rendered on the PostAxis server.",
+  "author": { "name": "PostAxis", "email": "hello@postaxis.io", "url": "https://postaxis.io" },
+  "homepage": "https://postaxis.io/ai-agents",
+  "license": "MIT",
+  "logo": "assets/logo.png",
+  "keywords": ["postaxis","social-media","scheduling","automation","ai-agent","mcp","carousel","instagram","tiktok","youtube","x","linkedin","threads","telegram","facebook"],
+  "skills": ["./skills/postaxis"],
+  "mcpServers": {
+    "postaxis": { "type": "http", "url": "https://postaxis.io/api/mcp", "note": "Hosted PostAxis MCP server. Sign in to PostAxis on first connection; no token or local install needed." }
+  }
+}
